@@ -11,33 +11,15 @@ interactive gameplay, and a polished GUI system
   - 🏴‍☠️ **Pirate**
   - 🚀 **Space**
   - ✨ **Magic**
-- **Player abilities**: movement, jumping, shooting (available in Levels 2 & 3), and interaction with the environment
-- **Collectibles** such as coins, stars, books, gravity boots and more
-- **Patrolling enemies** with collision mechanics
-- **Health and lives system** for the player
+- **Player abilities**: movement, jumping, shooting (levels 2 & 3), and interaction with the environment
+- **Collectibles** such as coins, stars, books, gravity boots, and more
+- **Enemies** with patrol and collision-based damage
+- **Player health & lives system**
 - **Background music & sound effects** unique to each level
-- **Main GUI**:
-  - Play
-  - Level selection
-  - Instructions on how to play
-  - Quit
-- **Pause GUI**:
-  - Resume gameplay
-  - Toggle background music
-  - Quit
-- **HUD (Head-Up Display)** showing live player statistics
-- **End-game statistics screen** displayed after completing all 3 levels
-
----
-
-## 🕹️ Controls
-
-| Key         | Action            |  
-|-------------|-------------------|  
-| **A / D**   | Move left / right |  
-| **W**       | Jump              |  
-| **Space**   | Shoot             |  
-| **ESC / P** | Pause             |
+- **Main menu GUI**: start game, level select, instructions, quit
+- **Pause menu GUI**: resume, toggle music, quit
+- **HUD** showing live player statistics
+- **End-game summary screen** displayed after all levels are completed
 
 ---
 
@@ -52,23 +34,11 @@ interactive gameplay, and a polished GUI system
 
 ### Frameworks & Libraries
 - **CityEngine** (provided by City, University of London) – physics engine for 2D games
-  - Includes support for `StepListener` (game loop updates) and `CollisionListener` (collision detection & handling)
+  - Provides `StepListener` (game loop updates) and `CollisionListener` (collision detection & handling)
 - **JBox2D** (`org.jbox2d.common.Vec2`) – vector math for physics calculations
 
 ### Utilities
 - **Exception handling** (`IOException`, `LineUnavailableException`, `UnsupportedAudioFileException`) for robust asset management
-
----
-
-## ⚙️ Requirements
-
-To run this project locally, you will need:
-
-- **Java JDK 8+** installed and added to your system PATH
-- **CityEngine Physics Library** (provided by City, University of London) – required for physics, collisions, and game engine features
-- A Java-compatible IDE
-
-> ⚠️ Note: The CityEngine library is not publicly distributed. You must have access through City, University of London for the project to compile and run
 
 ---
 
@@ -80,28 +50,25 @@ To run this project locally, you will need:
 - Implementing **event-driven programming** via listeners:
   - **Java Swing / AWT** → `KeyListener`, `MouseListener`, `ActionListener`, `ActionEvent` (GUI & user input)
   - **CityEngine** → `StepListener`, `CollisionListener` (game physics & collision handling)
-- Creating a polished **user interface (GUI)** using Java Swing components
+- Creating a polished **GUI** using Java Swing components
 - Handling **multimedia assets** (images, sounds, and music) with appropriate error handling and fallbacks
-- Writing **comprehensive documentation** with Javadocs and inline comments to ensure clarity for future maintainers
+- Writing **comprehensive documentation** with Javadocs and inline comments
 
 ---
 
 ## 🖼️ Screenshots
 
-- Level 1 Gameplay:
-![Level 1 Gameplay](docs/screenshots/level1_gameplay.png)
-
-- Level 2 Gameplay:
-![Level 2 Gameplay](docs/screenshots/level2_gameplay.png)
-
-- Level 3 Gameplay:
-![Level 3 Gameplay](docs/screenshots/level3_gameplay.png)
+<p align="center">
+  <img src="docs/screenshots/level1.png" alt="Level 1" width="30%"/>
+  <img src="docs/screenshots/level2.png" alt="Level 2" width="30%"/>
+  <img src="docs/screenshots/level3.png" alt="Level 3" width="30%"/>
+</p>
 
 --- 
 
-## 📌Future Improvements
+## 📌 Future Improvements
 
-- **Save & Load System** → Extend the GUI to allow saving/loading player progress, scores, and attributes
+- **Save & Load System** → Extend the GUI to allow saving/loading player progress, state, and attributes
 - **Smarter Enemy AI** → Enable enemies to **actively attack the player** (ranged/projectile attacks) rather than only causing damage on contact
 - **Enhanced Animations** → Improve player and enemy sprite animations for smoother and more lifelike movement
 
@@ -109,15 +76,7 @@ To run this project locally, you will need:
 
 ## 🙏 Acknowledgements
 
-Some utility classes (e.g., **PolygonEditor**) were provided by **City, University of London** as part of the coursework framework
-These tools were used to create precise hitboxes and collision outlines for in-game objects, ensuring accurate physics interactions
-
----
-
-## 🧑‍💻 Author
-
-Developed by **Abdus-Samad Mohit**
-- [LinkedIn](https://linkedin.com/in/samad-m)
-- [GitHub](https://github.com/Samad-M3)
+- The **PolygonEditor** class was provided by **City, University of London** as part of the coursework framework
+- It was used to create precise collision shapes and hitboxes for in-game objects, ensuring accurate physics interactions
 
 ---
